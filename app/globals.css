@@ -3,13 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --nature-green: #4CAF50;
+  --sky-blue: #4FC3F7;
+  --light-brown: #A1887F;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-nature-green: var(--nature-green);
+  --color-sky-blue: var(--sky-blue);
+  --color-light-brown: var(--light-brown);
+  --font-sans: var(--font-prompt);
+  --font-mono: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
