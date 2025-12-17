@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyNatureJourney 🌿
+
+A Next.js application for documenting and sharing nature travel experiences.
+
+## Design Concept
+
+**Style:** Nature Minimal / Modern / Clean
+
+**Color Palette:**
+- Nature Green: `#4CAF50`
+- Sky Blue: `#4FC3F7`
+- Light Brown: `#A1887F`
+- White: `#FFFFFF`
+
+**Fonts:** Prompt (Thai support) / Inter
+
+## Features
+
+### UX Flow
+1. **Landing Page** - Welcome visitors with a clean, nature-inspired design
+2. **Login/Signup** - Google & Apple authentication options
+3. **Dashboard** - Interactive map with recent trips overview
+4. **Create Memory** - Add new trips with photos and stories
+5. **Privacy Options** - Share with friends or keep trips private
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── page.tsx                    # Landing page
+├── login/                      # Authentication
+│   └── page.tsx
+├── signup/                     # Registration
+│   └── page.tsx
+├── dashboard/                  # Main dashboard
+│   ├── page.tsx
+│   └── create-memory/          # Trip creation flow
+│       └── page.tsx
+├── layout.tsx                  # Root layout with fonts
+└── globals.css                 # Global styles with brand colors
+```
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **Icons:** Lucide React
+- **Fonts:** Google Fonts (Prompt, Inter)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Available Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `/` - Landing page
+- `/login` - Login page
+- `/signup` - Registration page
+- `/dashboard` - User dashboard with map and recent trips
+- `/dashboard/create-memory` - Create new trip memory
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application uses:
+- Server Components by default
+- Client Components (marked with `'use client'`) for interactive features
+- Tailwind CSS custom theme configuration
+- Thai language support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with ❤️ for nature lovers
